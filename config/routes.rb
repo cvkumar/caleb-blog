@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  get "about/about" => "about#about"
+  get "/about" => "about#about"
+
+  get "/contact" => "contact#index"
 
   root 'welcome#index'
 end
